@@ -4,7 +4,7 @@ Trading investment strategies in practical application are most often ineffectiv
 
 # About methodology
 
-First, we define overfitting as a degradation in forecast quality for financial models. Second, we use Bailey et al, 2015 approach to estimate overfit in the model. To begin with, we apply the method of combinatorial symmetric cross-validation to our sample. Then we form a cloud of values of the Sharpe ratio for each point in the sample and out of the sample. After that, we use the principal curve method to approximate the past and the future.Thus, this approach allows you to combat the effect of overfitting by reducing the negative effect.
+First, we define overfitting as a degradation in forecast quality for financial models. Second, we use Bailey et al, 2015 approach to estimate overfit in the model. To begin with, we apply the method of combinatorial symmetric cross-validation to our sample. Then we form a cloud of values of the Sharpe ratio for each point in-sample and out-of-sample. After that, we use the principal curve method to approximate the past and the future.Thus, this approach allows you to combat the effect of overfitting by reducing the negative effect.
 
 ## Bibliography
 
