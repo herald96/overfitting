@@ -4,7 +4,7 @@ library(princurve)
 
 
 # Download the data
-data <- read_excel("~/Desktop/Code and data/data_raw.xlsx")
+data <- read_excel("data_raw.xlsx")
 setDT(data)
 
 ### Prepare the dataset
