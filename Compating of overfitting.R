@@ -78,7 +78,7 @@ for (t in 1565:N) {
     oos_chunks <- setdiff(1:12, is_chunks[, i]) # Find of the out-of-sample parts
     is_ind <- unlist(ind[is_chunks[, i]], use.names = F) # Determine the ordinal numbers of observations that need to be selected
     oos_ind <- unlist(ind[oos_chunks], use.names = F) 
-    is_sharpe <- colMeans(data_pbo[is_ind, ])/apply(data_pbo[is_ind, ], 2, sd) # Сount Sharpe кфешщ аor each column of the selected part of data_pbo 
+    is_sharpe <- colMeans(data_pbo[is_ind, ])/apply(data_pbo[is_ind, ], 2, sd) # Сount Sharpe ratio аor each column of the selected part of data_pbo 
     oos_sharpe <- colMeans(data_pbo[oos_ind, ])/apply(data_pbo[oos_ind, ], 2, sd) 
     
     fit <- principal_curve(cbind(is_sharpe, oos_sharpe))
